@@ -1,15 +1,15 @@
 package paquete03;
 
+import paquete02.Auto;
 import paquete02.Comprador;
-import paquete02.Consecionaria;
 
-public class TipoCamioneta extends Consecionaria {
+public class TipoCamioneta extends Auto {
     
     private double porcentajeAdicionalFijoImportacion;
     private double valorAdicionalFijoImportacion;
     private double seguroAdicionalMantenimiento;
 
-    public TipoCamioneta(double pro, Comprador pa, String m, double p) {
+    public TipoCamioneta(Comprador pa, String m, double p, double pro) {
         super(pa, m, p);
         porcentajeAdicionalFijoImportacion = pro;
     }

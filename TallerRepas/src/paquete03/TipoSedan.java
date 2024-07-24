@@ -1,20 +1,20 @@
 package paquete03;
 
+import paquete02.Auto;
 import paquete02.Comprador;
-import paquete02.Consecionaria;
 
-public class TipoSedan extends Consecionaria {
+public class TipoSedan extends Auto {
     
     private double porcentajeDescuento;
     private double valorDescuento;
     private double seguroAdicionalMecanico;
 
-    public TipoSedan(double por, Comprador pa, String m, double p) {
+    public TipoSedan(Comprador pa, String m, double p, double por) {
         super(pa, m, p);
         porcentajeDescuento = por;
     }
     
-    public void setPorcentajeDescuento(double p) {
+    public void establecerPorcentajeDescuento(double p) {
         porcentajeDescuento = p;
     }
     
@@ -31,7 +31,7 @@ public class TipoSedan extends Consecionaria {
         precioFinal = (precioBase - valorDescuento) + seguroAdicionalMecanico;
     }
     
-    public double getPorcentajeDescuento() {
+    public double obtenerPorcentajeDescuento() {
         return porcentajeDescuento;
     }
     

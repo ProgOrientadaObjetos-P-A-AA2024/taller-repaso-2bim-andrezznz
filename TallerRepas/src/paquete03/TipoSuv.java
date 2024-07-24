@@ -3,12 +3,12 @@ package paquete03;
 import paquete02.Comprador;
 import paquete02.Consecionaria;
 
-public class TipoSuv extends Consecionaria {
+public class TipoSuv extends Auto {
     
     private double porcentajeAdicionalSeguro;
     private double seguroPersonas;
 
-    public TipoSuv(double por, Comprador pa, String m, double p) {
+    public TipoSuv(Comprador pa, String m, double p, double por) {
         super(pa, m, p);
         porcentajeAdicionalSeguro = por;
     }
