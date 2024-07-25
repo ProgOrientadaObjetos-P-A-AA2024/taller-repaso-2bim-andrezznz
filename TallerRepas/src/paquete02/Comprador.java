@@ -3,11 +3,11 @@ package paquete02;
 public class Comprador {
     
     private String nombres;
-    private String apellidos;
+    private String cedula;
 
     public Comprador(String n, String a) {
         nombres = n;
-        apellidos = a;
+        cedula = a;
     }
 
     public void establecerNombres(String n) {
@@ -15,7 +15,7 @@ public class Comprador {
     }
     
     public void establecerApellidos(String a) {
-        apellidos = a;
+        cedula = a;
     }
     
     public String obtenerNombres() {
@@ -23,16 +23,16 @@ public class Comprador {
     }
 
     public String obtenerApellidos() {
-        return apellidos;
+        return cedula;
     }
 
     @Override
     public String toString() {
         
         String cadena = String.format("Nombres: %s\n"
-                + "Apellidos: %s\n",
+                + "Cedula: %s\n",
                 nombres,
-                apellidos);
+                cedula);
         
         return cadena;
     }

@@ -1,7 +1,7 @@
 package paquete03;
 
+import paquete02.Auto;
 import paquete02.Comprador;
-import paquete02.Consecionaria;
 
 public class TipoSuv extends Auto {
     

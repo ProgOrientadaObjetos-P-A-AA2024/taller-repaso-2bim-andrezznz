@@ -27,10 +27,6 @@ public abstract class Auto {
 
     public abstract void calcularPrecioFinal();
 
-    public double obtenerPrecioFinal() {
-        return precioFinal;
-    }
-
     public Comprador obtenerPropietario() {
         return propietario;
     }
@@ -43,13 +39,18 @@ public abstract class Auto {
         return precioBase;
     }
     
+    public double obtenerPrecioFinal() {
+        return precioFinal;
+    }
+    
     @Override
     public String toString() {
         
         String cadena = String.format("CONSECIONARIA\n"
                 + "%s"
                 + "Marca: %s\n"
-                + "Precio Base: %s\n",
+                + "Precio Base: %.2f\n"
+                + "Precio Final: %.2f\n",
                 propietario.toString(),
                 marca,
                 precioBase);
